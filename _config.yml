@@ -2,7 +2,7 @@ theme: jekyll-theme-midnight
 markdown: GFM
 
 title: Alexis' Pentesting Blog
-description: Secure Systems By Finding Ways To Break Into Those Systems
+description: Secure Systems By Finding Ways To Break Into Them
 #tagline: Used In <title> When No Title Is Set
 
 # permalink: /blog/:month-:day-:year-:title/
