@@ -1,1 +1,26 @@
 theme: jekyll-theme-midnight
+markdown: GFM
+
+# title: Title
+# description: description
+# tagline: Tagline
+
+# permalink: /blog/:month-:day-:year-:title/
+
+url: https://alexisevelyn.me
+github_repo_url: https://github.com/alexis-evelyn/alexis-evelyn.github.io
+
+github_repo_branch: master
+default_repo_branch: master
+
+social:
+  links:
+    - https://twitter.com/AlexisEvelyn42
+    - https://github.com/alexis-evelyn
+
+# legal:
+#   name: Full Organization Name
+#   tos_link: https://www.example.com/tos
+#   privacy_policy_link: https://www.example.com/privacy
+
+# https://github.com/riboseinc/jekyll-theme-open-project#getting-started-with-ruby-and-jekyll
