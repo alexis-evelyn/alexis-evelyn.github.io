@@ -1,11 +1,12 @@
+# jekyll-dash
 theme: jekyll-theme-midnight
-markdown: GFM
+markdown: kramdown
 
 title: Alexis' Pentesting Blog
 description: Secure Systems By Finding Ways To Break Into Them
 #tagline: Used In <title> When No Title Is Set
 
-# permalink: /blog/:month-:day-:year-:title/
+permalink: /:year/:month/:day/:title
 
 url: https://alexisevelyn.me
 github_repo_url: https://github.com/alexis-evelyn/alexis-evelyn.github.io
