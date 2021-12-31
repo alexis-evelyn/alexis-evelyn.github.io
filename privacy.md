@@ -1,0 +1,7 @@
+So, basically, I want to know if the blog attracts readers and what type of content the readers like to read. I use the default settings for Google Analytics, which contains information such as the website "alexisevelyn.me", the page path (for example, "/", for the index page), the full page url (the url you see in the address bar), the referrer (so, if you clicked a link to visit this site), and if you clicked a link. With this information, Google does stuff like mark down what country you are from (based on the ip address) and then Google throws away the ip address as I don't need that level of detail.
+
+I made sure the tracking is opt-in only. In order to ensure the tracking is opt-in, I made it where Javascript has to be turned on in order to even be tracked as well as made it where the Google Tag Manager code does not load until after the analytics cookies are accepted. If one were to opt-out later, all existing analytic cookies are wiped and then on the next page load, the script looks for the analytics cookies again (and wipes them again if found) when Google Tag Manager is no longer loaded to be able to set the cookies.
+
+I am using the GA4 analytics feature that Google has recently released at the time of this writing (December 31st, 2021). More information about GA4 can be found [here](https://support.google.com/analytics/answer/10089681).
+
+If you have any further questions, contact me on [Twitter](https://twitter.com/AlexisEvelyn42).
