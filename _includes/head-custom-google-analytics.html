@@ -1,0 +1,33 @@
+<!-- Tracking Consent Scripts -->
+<script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@latest/dist/cookieconsent.js"></script>
+<script defer src="/scripts/tracking-consent.js"></script>
+<!-- End Tracking Consent Scripts -->
+
+<script>
+	document.addEventListener("DOMContentLoaded", function(event) {
+		add_change_cookie_settings_link();
+	});
+
+	function add_change_cookie_settings_link() {
+		// Until I Go To Make My Own Custom Theme, Let's Just Inject The Cookie Setting Modification Link Into The Header
+		// <a href="javascript:void(0);" aria-label="View cookie settings" data-cc="c-settings">Cookie Settings</a>
+		var list_item = document.createElement("li");
+		list_item.setAttribute("class", "downloads");
+
+		var cookie_settings_link = document.createElement("a");
+		cookie_settings_link.href = "javascript:void(0);";
+		cookie_settings_link.setAttribute("aria-label", "View cookie settings");
+		cookie_settings_link.setAttribute("data-cc", "c-settings");
+		cookie_settings_link.text = "Cookie Settings";
+
+		// Combine Elements
+		list_item.appendChild(cookie_settings_link);
+
+		// Find <li class="fork">...</li>
+		var repo_link = document.querySelector("ul li[class='fork']");
+		var links_unordered_list = repo_link.closest("ul");
+
+		// Add Link To HTML
+		links_unordered_list.appendChild(list_item);
+	}
+</script>
