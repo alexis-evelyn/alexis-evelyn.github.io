@@ -9,7 +9,8 @@ function clear_analytic_cookies() {
 	for (var i = 0; i < cookieNames.length; i++) {
 		if (cookieNames[i].includes("_ga")) {
 			// Erase Analytic Cookies
-			document.cookie = cookieNames[i] + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+// 			document.cookie = cookieNames[i] + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+			document.cookie = cookieNames[i] + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; SameSite=Lax; domain=.alexisevelyn.me'; // Fix For Live Site
 		}
 	}
 }
